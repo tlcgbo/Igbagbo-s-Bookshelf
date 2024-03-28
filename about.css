@@ -41,3 +41,9 @@ body{
     float: center;
     border-style: solid;
 }
+img{
+    width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
