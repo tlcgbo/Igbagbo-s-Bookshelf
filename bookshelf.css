@@ -97,3 +97,12 @@ a.activeBookshelf,a:hover{
         color: #0a1e5e;
     }
 }
+a{
+    color: white;
+}
+.title{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    padding: 50px;
+}
