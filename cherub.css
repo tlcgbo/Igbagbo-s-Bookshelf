@@ -39,7 +39,7 @@ nav ul li a{
     text-transform: uppercase;
 }
 .thebook{
-    background: linear-gradient(#edc25d, black);
+    background: linear-gradient(#e65b10, black);
 }
 img{
     width: 640px;
@@ -52,6 +52,7 @@ p{
     text-align: right;
     font-size: 25px;
     padding: 100px;
+  
 }
 .right{
     color: white;
