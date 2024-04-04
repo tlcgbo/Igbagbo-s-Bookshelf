@@ -1,95 +1,79 @@
-*{
+* {
     padding: 0;
     margin: 0;
-    text-decoration: none;
-    list-style: none;
     box-sizing: border-box;
 }
-body{
+body {
     font-family: sans-serif;
     background-image: linear-gradient(to right, #041f7b, black);
 }
-nav{
+nav {
     background: #0a1e5e;
     height: 100px;
     width: 100%;
     padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-label.logo{
+label.logo {
     color: white;
     font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
     font-weight: bold;
+    padding-left: 20px;
 }
-nav ul{
-    float: right;
+nav ul {
+    display: flex;
+    list-style: none;
     margin-right: 20px;
 }
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
+nav ul li {
+    margin: 0 10px;
 }
-nav ul li a{
+nav ul li a {
     color: white;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
+    text-decoration: none;
     text-transform: uppercase;
 }
-.thebook{
+.thebook {
     background: linear-gradient(#e65b10, black);
-}
-img{
-    width: 640px;
-    padding: 50px;
-    margin: 50px;
-    float: left;
-}
-p{
     color: white;
-    text-align: right;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+.thebook img {
+    max-width: 100%;
+    margin: 20px;
+}
+.thebook p {
     font-size: 25px;
-    padding: 100px;
-  
+    margin: 10px;
+    text-align: center;
 }
-.right{
-    color: white;
+.right {
     text-align: left;
-    font-size: 25px;
-    padding: 50px;
+    margin-left: auto;
+    margin-right: 20px;
 }
-@media screen and (max-width: 600px) {
-    p{
-        font-size: 15px;
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
     }
-    img{
-        width: 240px;
-        padding: 20px;
-        margin: 20px;
-        float: left;
+    label.logo {
+        padding: 0 20px;
     }
-    .right{
-        color: white;
-        text-align: left;
-        font-size: 15px;
-        padding: 20px;
+    nav {
+        padding: 10px;
     }
-    nav ul{
-        float: right;
-        margin-right: 20px;
-    }
-    nav ul li{
-        display: inline-block;
-        line-height: 80px;
-        margin: 0 5px;
-    }
-    nav ul li a{
-        color: white;
-        font-size: 17px;
-        padding: 7px 13px;
-        border-radius: 3px;
-        text-transform: uppercase;
+    .thebook {
+        margin: 10px;
+        padding: 10px;
     }
 }
